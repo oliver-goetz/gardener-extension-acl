@@ -8,7 +8,7 @@ GARDENER_HACK_DIR           := $(shell go list -mod=mod -m -f "{{.Dir}}" github.
 EXTENSION_PREFIX            := gardener-extension
 NAME                        := acl
 ADMISSION_NAME              := admission-acl
-REPO                        := ghcr.io/stackitcloud
+REPO                        := ghcr.io/oliver-goetz
 REPO_ROOT                   := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 HACK_DIR                    := $(REPO_ROOT)/hack
 VERSION                     := $(shell git describe --tag --always --dirty)
